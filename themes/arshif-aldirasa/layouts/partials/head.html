@@ -5,7 +5,8 @@
 <!-- SEO Meta Tags -->
 <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="keywords" content="{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Site.Params.keywords | delimit ", " }}{{ end }}">
+<meta name="keywords" content="{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ delimit (apply .Site.Params.keywords "string" ".") ", " }}{{ end }}">
+
 <meta name="author" content="{{ .Site.Params.author }}">
 
 <!-- Open Graph / Facebook -->
