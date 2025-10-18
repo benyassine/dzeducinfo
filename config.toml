@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://dzeduc.info/"
 languageCode = "ar"
 title = "أرشف الدارسة - موقع تعليمي عربي"
 theme = "arshif-aldirasa"
