@@ -12,7 +12,7 @@ theme = "arshif-aldirasa"
   facebook = "arshif.aldirasa"
   
   # Google Analytics (يمكن تفعيله لاحقاً)
-  # googleAnalytics = "GA_TRACKING_ID"
+  googleAnalytics = "G-KLVVY88TKD"
   
   # Colors
   primaryColor = "#0077b6"
