@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on أرشف الدارسة - موقع تعليمي عربي</title>
-    <link>//localhost:1313/categories/</link>
-    <description>Recent content in Categories on أرشف الدارسة - موقع تعليمي عربي</description>
+    <title>Categories on أرشيف الدارسة - موقع تعليمي جزائري</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on أرشيف الدارسة - موقع تعليمي جزائري</description>
     <generator>Hugo</generator>
     <language>ar</language>
-    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

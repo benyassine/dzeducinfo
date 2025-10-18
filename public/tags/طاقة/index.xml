@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>طاقة on أرشف الدارسة - موقع تعليمي عربي</title>
-    <link>//localhost:1313/tags/%D8%B7%D8%A7%D9%82%D8%A9/</link>
-    <description>Recent content in طاقة on أرشف الدارسة - موقع تعليمي عربي</description>
+    <title>طاقة on أرشيف الدارسة - موقع تعليمي جزائري</title>
+    <link>http://localhost:1313/tags/%D8%B7%D8%A7%D9%82%D8%A9/</link>
+    <description>Recent content in طاقة on أرشيف الدارسة - موقع تعليمي جزائري</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%D8%B7%D8%A7%D9%82%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%D8%B7%D8%A7%D9%82%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>الدرس الأول في الفيزياء: الطاقة</title>
-      <link>//localhost:1313/lessons/lesson-1-physics/</link>
+      <link>http://localhost:1313/lessons/lesson-1-physics/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/lessons/lesson-1-physics/</guid>
+      <guid>http://localhost:1313/lessons/lesson-1-physics/</guid>
       <description>&lt;h2 id=&#34;مقدمة-في-الطاقة&#34;&gt;مقدمة في الطاقة&lt;/h2&gt;&#xA;&lt;p&gt;الطاقة هي القدرة على القيام بعمل. وهي موجودة في أشكال مختلفة في الكون، ويمكن تحويلها من شكل إلى آخر.&lt;/p&gt;&#xA;&lt;h2 id=&#34;أنواع-الطاقة&#34;&gt;أنواع الطاقة&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-الطاقة-الحركية&#34;&gt;1. الطاقة الحركية&lt;/h3&gt;&#xA;&lt;p&gt;هي الطاقة التي يمتلكها الجسم بسبب حركته. تعتمد على كتلة الجسم وسرعته.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;المعادلة:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;KE = ½ × m × v²&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2-الطاقة-الكامنة&#34;&gt;2. الطاقة الكامنة&lt;/h3&gt;&#xA;&lt;p&gt;هي الطاقة المخزنة في الجسم بسبب موضعه أو حالته.&lt;/p&gt;&#xA;&lt;h4 id=&#34;الطاقة-الكامنة-الجاذبية&#34;&gt;الطاقة الكامنة الجاذبية&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PE = m × g × h&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;الطاقة-الكامنة-المرونية&#34;&gt;الطاقة الكامنة المرونية&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PE = ½ × k × x²&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;قانون-حفظ-الطاقة&#34;&gt;قانون حفظ الطاقة&lt;/h2&gt;&#xA;&lt;p&gt;الطاقة لا تفنى ولا تستحدث من العدم، بل تتحول من شكل إلى آخر.&lt;/p&gt;</description>
     </item>
   </channel>
