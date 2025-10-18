@@ -1,11 +1,11 @@
 baseURL = "https://dzeduc.info/"
 languageCode = "ar"
-title = "أرشف الدارسة - موقع تعليمي عربي"
+title = "أرشيف الدارسة - موقع تعليمي جزائري"
 theme = "arshif-aldirasa"
 
 [params]
-  description = "موقع تعليمي عربي شامل للقوانين والدروس والأخبار التربوية"
-  keywords = ["تعليم", "دروس", "قوانين", "أخبار تربوية", "عربي"]
+  description = "موقع تعليمي جزائري شامل للقوانين والدروس والأخبار التربوية"
+  keywords = ["تعليم", "دروس", "قوانين", "أخبار تربوية", "الجزائر"]
   
   # Social Media
   twitter = "@arshif_aldirasa"
