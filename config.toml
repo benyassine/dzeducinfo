@@ -5,8 +5,6 @@ theme = "arshif-aldirasa"
 
 [params]
   description = "موقع تعليمي عربي شامل للقوانين والدروس والأخبار التربوية"
-  author = "أرشف الدارسة"
-
   keywords = ["تعليم", "دروس", "قوانين", "أخبار تربوية", "عربي"]
   
   # Social Media
