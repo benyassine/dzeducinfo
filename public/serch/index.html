@@ -1,0 +1,21 @@
+<h1>نتائج البحث</h1>
+<ul id="results"></ul>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script>
+async function runSearch() {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get('q');
+  if (!query) return;
+
+  const res = await fetch('/index.json');
+  const pages = await res.json();
+  const fuse = new Fuse(pages, { keys: ['title', 'summary'], threshold: 0.3 });
+  const results = fuse.search(query);
+
+  document.getElementById('results').innerHTML =
+    results.map(r => `<li><a href="${r.item.url}">${r.item.title}</a></li>`).join('');
+}
+runSearch();
+</script>
+

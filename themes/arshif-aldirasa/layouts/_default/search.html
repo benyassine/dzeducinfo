@@ -1,0 +1,90 @@
+{{ define "main" }}
+<div class="container">
+    <article class="single-article">
+        <header class="article-header">
+            <h1>نتائج البحث</h1>
+            <p>ابحث عن الدروس، القوانين، أو المقالات عبر كتابة الكلمة المفتاحية.</p>
+        </header>
+
+        <div class="search-box" style="margin-bottom: 2rem;">
+            <input type="text" id="searchInput" placeholder="أدخل كلمة البحث..."
+                style="width:100%; padding:1rem; font-size:1rem; border:1px solid #ccc; border-radius:10px;">
+        </div>
+
+        <div id="searchResults" class="article-content">
+            <p>اكتب في مربع البحث أعلاه لعرض النتائج.</p>
+        </div>
+    </article>
+</div>
+
+<style>
+/* نستخدم نفس الأنماط من single.html لتوحيد الشكل */
+{{/* يمكنك نسخ نفس CSS الذي وضعته في ملف single.html بالكامل هنا */}}
+.single-article {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+.article-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.article-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    const input = document.getElementById('searchInput');
+    const results = document.getElementById('searchResults');
+
+    // 🔹 دالة عرض النتائج
+    async function search(query) {
+        if (!query) {
+            results.innerHTML = "<p>اكتب في مربع البحث لعرض النتائج.</p>";
+            return;
+        }
+        try {
+            const res = await fetch('/index.json');
+            const data = await res.json();
+            const filtered = data.filter(item =>
+                item.title.toLowerCase().includes(query.toLowerCase()) ||
+                (item.summary && item.summary.toLowerCase().includes(query.toLowerCase()))
+            );
+            if (filtered.length === 0) {
+                results.innerHTML = "<p>لم يتم العثور على نتائج.</p>";
+                return;
+            }
+            results.innerHTML = filtered.map(p => `
+                <div class="result-item" style="margin-bottom:1.5rem;">
+                    <h3><a href="${p.url}" style="color:#0077b6; text-decoration:none;">${p.title}</a></h3>
+                </div>
+            `).join('');
+        } catch (e) {
+            results.innerHTML = "<p>حدث خطأ أثناء تحميل النتائج.</p>";
+        }
+    }
+
+    // 🔹 عند الكتابة
+    input.addEventListener('input', function() {
+        const query = this.value.trim();
+        search(query);
+    });
+
+    // 🔹 عند تحميل الصفحة لأول مرة: قراءة الكلمة من الرابط ?q=
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q');
+    if (query) {
+        input.value = query;
+        search(query);
+    }
+});
+</script>
+{{ end }}
+
