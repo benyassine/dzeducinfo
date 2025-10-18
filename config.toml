@@ -60,3 +60,7 @@ theme = "arshif-aldirasa"
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   #taxonomyTerm = ["HTML"]
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+  filename = "sitemap.xml"
