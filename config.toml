@@ -1,4 +1,4 @@
-baseURL = "https://arshif-aldirasa.netlify.app"
+baseURL = "/"
 languageCode = "ar"
 title = "أرشف الدارسة - موقع تعليمي عربي"
 theme = "arshif-aldirasa"
