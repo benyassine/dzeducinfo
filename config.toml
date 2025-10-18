@@ -6,6 +6,7 @@ theme = "arshif-aldirasa"
 [params]
   description = "موقع تعليمي عربي شامل للقوانين والدروس والأخبار التربوية"
   author = "أرشف الدارسة"
+
   keywords = ["تعليم", "دروس", "قوانين", "أخبار تربوية", "عربي"]
   
   # Social Media
@@ -21,7 +22,9 @@ theme = "arshif-aldirasa"
   
   # Font
   fontFamily = "Cairo, Arial, sans-serif"
-
+[author]
+  name = "Yassine"
+  email = "you@example.com"
 [menu]
   [[menu.main]]
     name = "الرئيسية"
