@@ -275,7 +275,9 @@ a:hover {
 .article-content li {
     margin-bottom: 0.5rem;
 }
-
+table {
+  border-collapse:collapse;
+}
 /* PDF Viewer */
 .pdf-viewer {
     width: 100%;
