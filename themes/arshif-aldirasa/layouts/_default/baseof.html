@@ -27,6 +27,21 @@
                 });
             }
         });
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        // لمنع حدوث خطأ في حال عدم وجود العنصر
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                // تبديل الفئة 'active' للقائمة
+                mainNav.classList.toggle('active');
+                
+                // يمكنك أيضًا تغيير أيقونة الهمبرغر إلى علامة X إذا أردت (اختياري)
+                // this.classList.toggle('is-open'); 
+            });
+        }
+    });
+</script>
 </body>
 </html>

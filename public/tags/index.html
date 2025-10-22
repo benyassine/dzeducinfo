@@ -86,7 +86,9 @@
                 </svg>
                 <span>أرشيف الدارسة</span>
             </div>
-            
+            <button class="menu-toggle" aria-label="فتح القائمة">
+                <span class="hamburger-icon"></span>
+            </button>
             <nav class="main-nav">
                 <ul>
                     
@@ -130,7 +132,6 @@
             <h2><a href="http://localhost:1313/tags/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/">أخبار</a></h2>
             
             
-            
             <div class="article-footer">
                 <a href="http://localhost:1313/tags/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/" class="btn btn-outline">اقرأ المزيد</a>
             </div>
@@ -143,7 +144,6 @@
             </div>
             
             <h2><a href="http://localhost:1313/tags/%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA/">امتحانات</a></h2>
-            
             
             
             <div class="article-footer">
@@ -160,7 +160,6 @@
             <h2><a href="http://localhost:1313/tags/%D8%B1%D8%B2%D9%86%D8%A7%D9%85%D8%A9/">رزنامة</a></h2>
             
             
-            
             <div class="article-footer">
                 <a href="http://localhost:1313/tags/%D8%B1%D8%B2%D9%86%D8%A7%D9%85%D8%A9/" class="btn btn-outline">اقرأ المزيد</a>
             </div>
@@ -173,7 +172,6 @@
             </div>
             
             <h2><a href="http://localhost:1313/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/">تعليم</a></h2>
-            
             
             
             <div class="article-footer">
@@ -190,7 +188,6 @@
             <h2><a href="http://localhost:1313/tags/%D8%B7%D8%A7%D9%82%D8%A9/">طاقة</a></h2>
             
             
-            
             <div class="article-footer">
                 <a href="http://localhost:1313/tags/%D8%B7%D8%A7%D9%82%D8%A9/" class="btn btn-outline">اقرأ المزيد</a>
             </div>
@@ -203,7 +200,6 @@
             </div>
             
             <h2><a href="http://localhost:1313/tags/%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1/">فيزياء</a></h2>
-            
             
             
             <div class="article-footer">
@@ -220,7 +216,6 @@
             <h2><a href="http://localhost:1313/tags/%D8%AA%D8%B4%D8%B1%D9%8A%D8%B9/">تشريع</a></h2>
             
             
-            
             <div class="article-footer">
                 <a href="http://localhost:1313/tags/%D8%AA%D8%B4%D8%B1%D9%8A%D8%B9/" class="btn btn-outline">اقرأ المزيد</a>
             </div>
@@ -233,7 +228,6 @@
             </div>
             
             <h2><a href="http://localhost:1313/tags/%D9%82%D8%A7%D9%86%D9%88%D9%86/">قانون</a></h2>
-            
             
             
             <div class="article-footer">
@@ -357,6 +351,21 @@
                 });
             }
         });
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                
+                mainNav.classList.toggle('active');
+                
+                
+                
+            });
+        }
+    });
+</script>
 </body>
 </html>

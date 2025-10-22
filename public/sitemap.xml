@@ -47,6 +47,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/lessons/lesson-2-physics/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
