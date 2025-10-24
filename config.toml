@@ -1,6 +1,6 @@
 baseURL = "https://dzeduc.info/"
 languageCode = "ar"
-title = "أرشيف الدارسة - موقع تعليمي جزائري"
+title = "أرشيف الدراسة - موقع تعليمي جزائري"
 theme = "arshif-aldirasa"
 
 [params]
@@ -21,8 +21,8 @@ theme = "arshif-aldirasa"
   # Font
   fontFamily = "Cairo, Arial, sans-serif"
 [author]
-  name = "Yassine"
-  email = "you@example.com"
+  name = "أرشيف الدراسى"
+  email = "help@dzeduc.info"
 [menu]
   [[menu.main]]
     name = "الرئيسية"
