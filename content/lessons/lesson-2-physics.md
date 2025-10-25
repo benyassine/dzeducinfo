@@ -3,7 +3,7 @@ title: "الدرس الأول في الفيزياء: الطاقة"
 date: 2024-01-15
 author: "د. أحمد محمد"
 tags: ["فيزياء", "طاقة", "تعليم"]
-pdf: "https://drive.google.com/uc?export=view&id=0B8pqJcWKmoaiY1dGQW9XM2dzMDQ"
+pdf: "https://drive.google.com/file/d/0B8pqJcWKmoaiY1dGQW9XM2dzMDQ/preview"
 share: true
 ---
 
